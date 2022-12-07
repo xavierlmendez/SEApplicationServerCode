@@ -10,11 +10,6 @@ import AWS from "aws-sdk";
 
 
 
-//import data from '../';
-//code legacy from tutorial https://www.asapdevelopers.com/build-a-react-native-login-app-with-node-js-backend/
-//import { signup, login, isAuth } from '../controllers/auth.js';
-
-
 //configure the mysql connection object (delete password before upload)
     var con = mysql.createConnection({
         host: '18.205.69.32',
@@ -30,7 +25,7 @@ import AWS from "aws-sdk";
 
 
 
-
+//underdevelopment meant to upload a picture of a restaurant to the database 
     router.get('/imgaeBase64Test/', async function(req,res){
         const pic = res.parse.pic;
         const id = res.parse.restaurantID;
