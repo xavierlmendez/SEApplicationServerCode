@@ -9,13 +9,7 @@ import s3Client from "@aws-sdk/client-s3";
 import AWS from "aws-sdk";
 
 
-// const S3 = new AWS.S3({
-//     //signatureVersion: "v4",
-//     apiVersion: "2006-03-01",
-//     accessKeyId: "AKIA4GTTWCIHG35R3CGV",
-//     secretAccessKey: "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",
-//     region: "us-east-1",
-// });
+
 //import data from '../';
 //code legacy from tutorial https://www.asapdevelopers.com/build-a-react-native-login-app-with-node-js-backend/
 //import { signup, login, isAuth } from '../controllers/auth.js';
@@ -25,7 +19,7 @@ import AWS from "aws-sdk";
     var con = mysql.createConnection({
         host: '18.205.69.32',
         user: 'admin',
-        password: 'M100101s',
+        password: '',
         database: "foodys",
         port: 3306
     });
