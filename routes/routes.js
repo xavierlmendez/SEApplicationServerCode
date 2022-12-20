@@ -12,13 +12,12 @@ import AWS from "aws-sdk";
 
 //configure the mysql connection object (delete password before upload)
     var con = mysql.createConnection({
-        host: '18.205.69.32',
-        user: 'admin',
-        password: '',
-        database: "foodys",
-        port: 3306
+        host: process.env.HOST,
+        user: process.env.USER,
+        password: process.env.PASSWORD,
+        database: process.env.DB,
+        port: process.env.PORT
     });
-
 
     const router = express.Router();
 
